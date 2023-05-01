@@ -14,3 +14,8 @@ export const todosList = [
 ];
 
 export type TodoDTO = typeof todosList[0];
+
+export interface TodoModel extends TodoDTO {
+  isCompleted: boolean;
+  completedSubtasks: boolean[];
+}
